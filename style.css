@@ -1,0 +1,1343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner_slider {
+    z-index: -1;
+    height: 80rem;
+    width: 100%;
+    display: flex;
+    top: 0;
+
+
+}
+
+.banner_slider #bimg_1 {
+    z-index: -1;
+    object-fit: contain;
+    width: 100%;
+    margin-top: -40rem;
+
+}
+
+/* .banner_slider #bimg_2 {
+    display: none;
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    top: 0;
+} */
+
+.nav {
+    z-index: 99;
+    top: 0;
+    background: linear-gradient(100deg, red, orange);
+    z-index: 1;
+    gap: 7rem;
+    position: fixed;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav #main_logo {
+    position: absolute;
+    height: 9rem;
+    margin-left: -20rem;
+    margin-top: -4rem;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    position: relative;
+
+}
+
+.nav li a:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    color: black;
+}
+
+.banner_text {
+    animation-name: banner_text;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    width: 40rem;
+    height: 10rem;
+    margin-top: 12rem;
+}
+
+@keyframes banner_text {
+    0% {
+        top: 0px;
+        right: 300px;
+    }
+
+    100% {
+        top: 0px;
+        right: 0px;
+    }
+
+}
+
+.banner_text h1 {
+    margin-left: -85rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+}
+
+.banner_text p {
+    margin-left: -85rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.banner_text a {
+    margin-left: -85rem;
+    cursor: pointer;
+    height: 3rem;
+    padding: 1rem;
+    width: 10rem;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.banner_text a:hover {
+    color: greenyellow;
+    transition: 0.5s;
+    border: none;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+
+}
+
+.sec_1 {
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    width: 100%;
+    margin-top: -6rem;
+}
+
+.sec_1 img {
+    height: 4rem;
+    cursor: pointer;
+}
+
+.sec_1 img:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.sec_1 p {
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.food_products {
+    /* border: 1px solid black; */
+    margin-top: -70rem;
+
+    width: 80%;
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+}
+
+.sec_1_arrow_left {
+    cursor: pointer;
+    margin-top: -70rem;
+
+}
+
+.sec_1_arrow_left:hover {
+    color: red;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.sec_1_arrow_right {
+    cursor: pointer;
+    margin-top: -70rem;
+
+}
+
+.sec_1_arrow_right:hover {
+    color: red;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.food_products::-webkit-scrollbar {
+    display: none;
+
+}
+
+.card_section {
+    gap: 1rem;
+    margin-top: -30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 12rem;
+    width: 100%;
+}
+
+.card1 {
+    cursor: pointer;
+    padding: 1rem;
+    height: 12rem;
+    width: 25%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor: pointer;
+}
+
+.card1:hover {
+    transition: 0.3s;
+    background-color: orange;
+}
+
+.card1 h1 {
+    text-shadow: grey 2px 2px 3px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.card1 p {
+    text-shadow: grey 1px 1px 2px;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card1:hover h1 {
+    color: white;
+}
+
+.card1:hover p {
+    color: white;
+}
+
+
+.card1 img {
+    height: 12rem;
+    margin-top: -9.5rem;
+    margin-left: 4rem;
+}
+
+
+
+.card2 {
+    cursor: pointer;
+    height: 12rem;
+    width: 25%;
+    border-radius: 20px 20px 20px 20px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+
+.card2:hover {
+    transition: 0.3s;
+    background-color: orange;
+}
+
+.card2 h1 {
+    text-shadow: grey 2px 2px 3px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.card2 p {
+    text-shadow: grey 1px 1px 2px;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card2:hover h1 {
+    color: white;
+}
+
+.card2:hover p {
+    color: white;
+}
+
+
+.card2 img {
+    height: 12rem;
+    margin-top: -9.5rem;
+    margin-left: 4rem;
+}
+
+.card3 {
+    cursor: pointer;
+    padding: 1rem;
+    height: 12rem;
+    width: 25%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.card3:hover {
+    transition: 0.3s;
+    background-color: orange;
+}
+
+.card3 h1 {
+    text-shadow: grey 2px 2px 3px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.card3 p {
+    text-shadow: grey 1px 1px 2px;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card3:hover h1 {
+    color: white;
+}
+
+.card3:hover p {
+    color: white;
+}
+
+
+.card3 img {
+    height: 12rem;
+    margin-top: -9.5rem;
+    margin-left: 4rem;
+}
+
+.card_section2 {
+    gap: 1rem;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 12rem;
+    width: 100%;
+}
+
+.card2_1 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px 20px 20px 20px;
+    padding: 1rem;
+    height: 12rem;
+    width: 38%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.card2_1 img{
+height: 12rem;
+margin-left: -5rem;
+
+}
+.card2_1 h1{
+    text-shadow: grey 2px 2px 3px;
+    width: 20rem;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.card2_1 p{
+    width: 10rem;
+    text-align: left;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  font-size: 15px;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
+.card2_1:hover{
+background-color: orange;
+transition: 0.3s;
+}
+.card2_1:hover h1{
+color: white;
+}
+.card2_1:hover p{
+    color: white;
+}
+.card2_2 {
+    display: flex;
+    cursor: pointer;
+    height: 12rem;
+    width: 38%;
+    padding: 1rem;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.card2_2 img{
+    height: 12rem;
+    margin-left: -5rem;
+    margin-top: -1rem;
+    
+    }
+    .card2_2 h1{
+        text-shadow: grey 2px 2px 3px;
+        width: 20rem;
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+    }
+    .card2_2 p{
+        width: 10rem;
+        text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  font-size: 15px;
+        margin-top: 4.5rem;
+        letter-spacing: 1px;
+    }
+    .card2_2:hover{
+    background-color: orange;
+    transition: 0.3s;
+    }
+    .card2_2:hover h1{
+    color: white;
+    }
+    .card2_2:hover p{
+        color: green;
+    }
+
+.sec_2 {
+    margin-top: 7rem;
+    height: 15rem;
+    width: 100%;
+    background: linear-gradient(100deg, yellowgreen, orange);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.sec_2 h1 {
+    color: aliceblue;
+    text-shadow: grey 2px 2px 3px;
+    margin-top: 2rem;
+    margin-left: 50rem;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.sec_2 img {
+    transform: skew(-10deg);
+    margin-top: -2.5rem;
+    margin-left: 25rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+
+.app {
+    position: absolute;
+    margin-left: 50rem;
+    margin-top: 11rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.apple {
+    cursor: pointer;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;
+    height: 3rem;
+    width: 10rem;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+
+}
+
+.apple:hover {
+    transition: 0.2s;
+    background-color: white;
+}
+
+.apple:hover p {
+    transition: 0.2s;
+    background-color: white;
+    color: black;
+}
+
+.apple:hover .apple_icon {
+    transition: 0.2s;
+
+    color: black;
+}
+
+.apple p {
+    background: transparent;
+    color: white;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 2rem;
+    margin-top: 0.1rem;
+
+}
+
+.playstore {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor: pointer;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;
+    height: 3rem;
+    width: 10rem;
+    background-color: black;
+}
+
+.playstore:hover {
+    transition: 0.2s;
+    background-color: white;
+}
+
+.playstore:hover p {
+    transition: 0.2s;
+    color: black;
+}
+
+.playstore:hover .playstore_icon {
+    transition: 0.2s;
+    color: black;
+}
+
+.playstore p {
+    background: transparent;
+    color: white;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 2.5rem;
+    margin-top: 0.1rem;
+}
+
+.apple_icon {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+}
+
+.playstore_icon {
+    margin-top: 0.1rem;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+}
+
+.sec3 {
+    margin-top: 10rem;
+    height: 5rem;
+    width: 100%;
+    background-color: red;
+}
+
+.sec3 h1 {
+    font-size: 50px;
+    text-shadow: grey 2px 2px 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: skew(-10deg);
+    color: white;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 15rem;
+}
+
+.wssap_icon {
+    cursor: pointer;
+    opacity: 0.7;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin-left: 25.2rem;
+    margin-top: 1.8rem;
+}
+
+.wssap_icon:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.sec3 b {
+    opacity: 0.7;
+    color: white;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-left: 28rem;
+    margin-top: 2.3rem;
+}
+
+.social {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 70rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.fb_icon {
+    cursor: pointer;
+    opacity: 0.7;
+    color: white;
+    font-size: 30px;
+}
+
+.fb_icon:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.insta_icon {
+    cursor: pointer;
+    opacity: 0.7;
+    color: white;
+    font-size: 30px;
+}
+
+.insta_icon:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.linkedin_icon {
+    cursor: pointer;
+    opacity: 0.7;
+    color: white;
+    font-size: 30px;
+}
+
+.linkedin_icon:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.twitter_icon {
+    cursor: pointer;
+    opacity: 0.7;
+    color: white;
+    font-size: 30px;
+}
+
+.twitter_icon:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.footer {
+    position: absolute;
+    height: 20rem;
+    width: 100%;
+    background-color: black;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer_about {
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: 7rem;
+
+}
+
+.footer_about h1 {
+    letter-spacing: 2px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.footer_about li {
+    padding: 1rem;
+    list-style: none;
+}
+
+.footer_about li a {
+    opacity: 0.6;
+    margin-left: -10px;
+    margin-top: 1rem;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.footer_about li a:hover {
+    transition: 0.2s;
+    opacity: 1;
+    border-bottom: 1px solid red;
+}
+
+.footer_details {
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: 24rem;
+
+}
+
+.footer_details h1 {
+    letter-spacing: 2px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.footer_details li {
+    width: 10rem;
+    padding: 1rem;
+    list-style: none;
+}
+
+.footer_details #contact a {
+    width: 10rem;
+}
+
+.footer_details li a {
+    width: 22.5rem;
+
+    opacity: 0.6;
+    margin-left: -10px;
+    margin-top: 1rem;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.footer_details li a:hover {
+    transition: 0.2s;
+    opacity: 1;
+    border-bottom: 1px solid red;
+}
+
+.footer_logo #footer_logo {
+    height: 23rem;
+    position: absolute;
+    right: 0;
+    margin-right: 5rem;
+    margin-top: -2rem;
+}
+
+.bottom {
+    position: absolute;
+    letter-spacing: 2px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 3rem;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 20rem;
+
+}
+
+/* menu_page */
+
+.menu_sec1 {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 4rem;
+    width: 100%;
+    background-color: black;
+    margin-top: 4rem;
+}
+
+.menu_sec1 p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.menu_sec1 a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 11px;
+    padding: 15px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.menu_sec1 a:hover {
+
+    color: black;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.menu_category_list {
+    position: sticky;
+    top: 5rem;
+    margin-left: 5rem;
+    padding: 12px;
+    margin-top: 2rem;
+    display: grid;
+}
+
+.menu_category_list h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+}
+
+.menu_category_list li {
+    margin-top: 1rem;
+    padding: 12px;
+    list-style: none;
+    gap: 2rem;
+
+}
+
+.menu_category_list li a {
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.menu_category_list li a:hover {
+    color: red;
+}
+
+.menu_scroll {
+    margin-left: 45rem;
+    margin-top: -28rem;
+    display: flex;
+}
+
+.menu_scroll_main {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: auto;
+    gap: 1.5rem;
+    width: 15rem;
+    display: flex;
+    height: 21rem;
+}
+
+.menu_scroll_main img {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.menu_scroll_main::-webkit-scrollbar {
+    display: none;
+}
+
+.menu_scroll_left {
+    cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: -2rem;
+    font-size: 40px;
+}
+
+.menu_scroll_left:hover {
+    opacity: 1;
+    color: red;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.menu_scroll_right {
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 40px;
+    position: absolute;
+    margin-left: 15.3rem;
+    margin-top: 10rem;
+}
+
+.menu_scroll_right:hover {
+    opacity: 1;
+    color: red;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.menu_card {
+    padding: 1rem;
+    height: 50rem;
+    width: 63rem;
+    margin-left: 25rem;
+    margin-top: 10rem;
+
+}
+
+.burger_card {
+    width: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 3rem;
+
+}
+
+#burgers {
+    margin-left: 22rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    text-shadow: grey 2px 2px 3px;
+
+}
+
+.burger_combo_banner {
+    margin-top: 5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 20rem;
+    margin-top: 35rem;
+    margin-left: -25rem;
+}
+
+.burger_combo_banner img {
+    border-radius: 20px 20px 20px 20px;
+    object-fit: contain;
+    height: 20rem;
+    width: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.burger_scroller {
+    margin-top: 34rem;
+    display: flex;
+    height: 9rem;
+    width: 35rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: black;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.bscroll {
+    padding: 10px;
+    gap: 1rem;
+    display: flex;
+    height: 9rem;
+    width: 21rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.bscroll::-webkit-scrollbar {
+    background: white;
+    display: none;
+}
+
+.burger_left {
+    cursor: pointer;
+    position: absolute;
+    margin-left: -25rem;
+    color: white;
+    font-size: 20px;
+}
+
+.burger_left:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    color: red;
+}
+
+.burger_right {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 24.5rem;
+    color: white;
+    font-size: 19.5px;
+}
+
+.burger_right:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    color: red;
+}
+
+.bur img {
+    cursor: pointer;
+    height: 75px;
+}
+
+.bur img:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.bur p {
+    color: white;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pizza_card {
+    margin-top: 38rem;
+    margin-left: -3.5rem;
+    width: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 4rem;
+
+}
+
+#pizzas {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    text-shadow: grey 2px 2px 3px;
+}
+
+.pizza_combo_banner {
+    margin-top: 5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 28rem;
+    margin-left: 32rem;
+    margin-top: -15rem;
+}
+
+.pizza_combo_banner img {
+
+    border: 0.5px solid black;
+    border-radius: 20px 20px 20px 20px;
+    object-fit: contain;
+    height: 20rem;
+    width: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.pizza_scroller {
+    margin-top: 10rem;
+    margin-left: 2rem;
+    display: flex;
+    height: 9rem;
+    width: 37rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: wheat;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.pscroll::-webkit-scrollbar {
+    background: white;
+    display: none;
+}
+
+.pscroll {
+    padding: 10px;
+    gap: 1.5rem;
+    display: flex;
+    height: 9rem;
+    width: 18rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.pizza_left {
+    cursor: pointer;
+    position: absolute;
+    margin-left: -25rem;
+    color: black;
+    font-size: 20px;
+}
+
+.pizza_left:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    color: red;
+}
+
+.pizza_right {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 24.5rem;
+    color: black;
+    font-size: 19.5px;
+}
+
+.pizza_right:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    color: red;
+}
+
+.piz img {
+    cursor: pointer;
+    height: 80px;
+}
+
+.piz img:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.piz p {
+    color: black;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.noodles_card {
+    margin-top: 28rem;
+    margin-left: 22rem;
+    width: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 4rem;
+
+}
+
+#noodles {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    text-shadow: grey 2px 2px 3px;
+}
+
+.noodles_combo_banner {
+    margin-top: 5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 20rem;
+    margin-top: 5rem;
+    margin-left: 28rem;
+}
+
+.noodles_combo_banner img {
+    border-radius: 20px 20px 20px 20px;
+    object-fit: contain;
+    height: 20rem;
+    width: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.noodles_scroller {
+    margin-top: -14rem;
+    margin-left: 45rem;
+    display: flex;
+    height: 9rem;
+    width: 35rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: black;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.nscroll {
+    padding: 10px;
+    gap: 1rem;
+    display: flex;
+    height: 9rem;
+    width: 21rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.nscroll::-webkit-scrollbar {
+    background: white;
+    display: none;
+}
+
+.noodles_left {
+    cursor: pointer;
+    position: absolute;
+    margin-left: -25rem;
+    color: white;
+    font-size: 20px;
+}
+
+.noodles_left:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    color: red;
+}
+
+.noodles_right {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 24.5rem;
+    color: white;
+    font-size: 19.5px;
+}
+
+.noodles_right:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+    color: red;
+}
+
+.nol img {
+    cursor: pointer;
+    height: 105px;
+}
+
+.nol img:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.nol p {
+    color: white;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.other_menu {
+    background: linear-gradient(200deg, red, orange);
+    margin-left: 47rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 8rem;
+    width: 40rem;
+    margin-top: 25rem;
+    transform: skew(10deg);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.other_menu #sanwiches {
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    height: 15rem;
+    width: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    object-fit: cover;
+
+}
+
+.other_menu #sanwiches:hover {
+    transition: 0.5s;
+    width: 20rem;
+}
+
+.other_menu #indianfood {
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    height: 15rem;
+    width: 5rem;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+
+}
+
+.other_menu #indianfood:hover {
+    transition: 0.5s;
+    width: 20rem;
+}
+
+.other_menu #shakes {
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    height: 15rem;
+    width: 5rem;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+
+}
+
+.other_menu #shakes:hover {
+    transition: 0.5s;
+    width: 20rem;
+}
+
+.search{
+    margin-top: 1rem;
+    width: 50rem;
+    margin-left: 25rem;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;
+}
