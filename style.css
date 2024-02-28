@@ -6,14 +6,13 @@
 }
 
 
+
 .banner_slider {
     z-index: -1;
     height: 80rem;
     width: 100%;
     display: flex;
     top: 0;
-
-
 }
 
 .banner_slider #bimg_1 {
@@ -24,13 +23,14 @@
 
 }
 
-/* .banner_slider #bimg_2 {
+.banner_slider #bimg_2 {
     display: none;
-    position: absolute;
+    z-index: -1;
     object-fit: contain;
     width: 100%;
-    top: 0;
-} */
+    margin-top: -40rem;
+
+}
 
 .nav {
     z-index: 99;
@@ -108,7 +108,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
-    color: white;
+    color:white;
 }
 
 .banner_text a {
@@ -129,11 +129,11 @@
 }
 
 .banner_text a:hover {
-    color: greenyellow;
+    color: black;
     transition: 0.5s;
     border: none;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 
 }
 
@@ -1697,16 +1697,17 @@
 }
 
 .scroll_up a {
-  position: absolute;
+    position: absolute;
     font-size: 40px;
     color: white;
 }
 
-.scroll_up:hover{
+.scroll_up:hover {
     background-color: red;
 
 }
-.scroll_up:hover .acroll_up_arrow{
-   background-color: gold;
-    
+
+.scroll_up:hover .acroll_up_arrow {
+    background-color: gold;
+
 }
